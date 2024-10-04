@@ -1,10 +1,6 @@
-FROM archlinux
+FROM denoland/deno:alpine
 
-WORKDIR /workspace
-
-RUN pacman -Syy
-
-RUN pacman -S --noconfirm deno
+WORKDIR /code
 
 COPY bin .
 
@@ -12,4 +8,6 @@ COPY bin .
 # npm vite@latest
 # Other > create-vite-extra > deno-svelte > Typescript
 
-CMD "deno task dev"
+RUN deno task build
+
+CMD ["deno", "task", "serve"]

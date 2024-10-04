@@ -85,7 +85,7 @@ function start-up(){
  
     docker build -t $docker_img_name .
 
-    docker run -ti --rm $docker_img_name
+    docker run --rm -p 80:4507 $docker_img_name
 
     echo "$info_base ended" >> $logfile
 

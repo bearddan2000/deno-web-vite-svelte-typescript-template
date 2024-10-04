@@ -10,7 +10,7 @@ A vue template for the vite packager.
 - vite
 
 ## Docker stack
-- archlinux
+- denoland/deno:alpine
 
 ## To run
 `sudo ./install.sh -u`
