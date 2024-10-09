@@ -1,11 +1,11 @@
-# deno-web-vite-vue-typescript-template
+# deno-web-vite-svelte-typescript-template
 
 ## Description
-A vue template for the vite packager.
+A svelte template for the vite packager.
 
 ## Tech stack
 - deno
-- vue
+- svelte
 - typescript
 - vite
 
